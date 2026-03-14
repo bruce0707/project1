@@ -1,0 +1,4 @@
+[2026-03-14 19:14:20,170] INFO - Logger is working
+[2026-03-14 19:14:22,435] INFO - NumExpr defaulting to 12 threads.
+[2026-03-14 19:14:23,611] INFO - Data Ingestion started.
+[2026-03-14 19:14:23,628] ERROR - Error occurred during data ingestion.

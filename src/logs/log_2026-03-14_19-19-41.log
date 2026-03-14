@@ -1,0 +1,7 @@
+[2026-03-14 19:19:41,960] INFO - Logger is working
+[2026-03-14 19:19:42,821] INFO - NumExpr defaulting to 12 threads.
+[2026-03-14 19:19:43,394] INFO - Data Ingestion started.
+[2026-03-14 19:19:43,433] INFO - Dataset read successfully.
+[2026-03-14 19:19:43,446] INFO - train test split initiated.
+[2026-03-14 19:19:47,765] INFO - Data split into train and test sets.
+[2026-03-14 19:19:47,773] INFO - Data Ingestion completed successfully.
