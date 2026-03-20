@@ -1,0 +1,10 @@
+[2026-03-20 18:49:31,876] INFO - Logger is working
+[2026-03-20 18:49:42,371] INFO - Data Ingestion started.
+[2026-03-20 18:49:42,420] INFO - Dataset read successfully.
+[2026-03-20 18:49:42,436] INFO - train test split initiated.
+[2026-03-20 18:49:42,451] INFO - Data split into train and test sets.
+[2026-03-20 18:49:42,454] INFO - Data Ingestion completed successfully.
+[2026-03-20 18:49:42,454] INFO - Data Transformation initiated.
+[2026-03-20 18:49:42,557] INFO - Model Trainer initiated.
+[2026-03-20 18:49:45,585] INFO - Best model: Gradient Boosting, R2 score: 0.8723357677497477
+[2026-03-20 18:49:45,647] INFO - Final R2 Score: 0.8722929533082354
