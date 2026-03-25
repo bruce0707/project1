@@ -1,0 +1,8 @@
+[2026-03-25 16:05:05,034] INFO - Logger is working
+[2026-03-25 16:05:08,393] INFO - Data Ingestion started.
+[2026-03-25 16:05:08,403] INFO - Dataset read successfully.
+[2026-03-25 16:05:08,411] INFO - train test split initiated.
+[2026-03-25 16:05:08,411] INFO - Data split into train and test sets.
+[2026-03-25 16:05:08,418] INFO - Data Ingestion completed successfully.
+[2026-03-25 16:05:08,419] INFO - Data Transformation initiated.
+[2026-03-25 16:05:08,514] INFO - Model Trainer initiated.

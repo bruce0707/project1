@@ -1,0 +1,10 @@
+[2026-03-25 17:35:03,840] INFO - Logger is working
+[2026-03-25 17:35:07,988] INFO - Data Ingestion started.
+[2026-03-25 17:35:07,992] INFO - Dataset read successfully.
+[2026-03-25 17:35:07,997] INFO - train test split initiated.
+[2026-03-25 17:35:07,999] INFO - Data split into train and test sets.
+[2026-03-25 17:35:08,004] INFO - Data Ingestion completed successfully.
+[2026-03-25 17:35:08,006] INFO - Data Transformation initiated.
+[2026-03-25 17:35:08,082] INFO - Model Trainer initiated.
+[2026-03-25 17:35:30,648] INFO - Best model: CatBoost, R2 score: 0.8741603636487991
+[2026-03-25 17:35:30,663] INFO - Final R2 Score: 0.8741603636487991

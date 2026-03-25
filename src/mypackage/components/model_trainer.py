@@ -40,13 +40,62 @@ class ModelTrainer:
                     "KNN": KNeighborsRegressor(),
                     "Decision Tree": DecisionTreeRegressor()
                 }
+                params = {
+                                "Random Forest": {
+                                    'n_estimators': [100, 200],
+                                    'max_depth': [10, 20],           
+                                    'min_samples_split': [2, 5],
+                                    'min_samples_leaf': [1, 2],
+                                    'max_features': ['sqrt', 'log2']  
+                                },
+                                
+                                "Gradient Boosting": {
+                                    'n_estimators': [100, 200],
+                                    'learning_rate': [0.01, 0.1],
+                                    'max_depth': [3, 5],             
+                                    'subsample': [0.8, 0.9]
+                                },
+                                
+                                "AdaBoost": {
+                                    'n_estimators': [50, 100],
+                                    'learning_rate': [0.1, 1.0]
+                                },
+                                
+                                "CatBoost": {
+                                    'iterations': [100, 200],
+                                    'learning_rate': [0.01, 0.1],
+                                    'depth': [4, 6]
+                                },
+                                
+                                "XGBoost": {
+                                    'n_estimators': [100, 200],
+                                    'learning_rate': [0.01, 0.1],
+                                    'max_depth': [3, 6],
+                                    'subsample': [0.8, 0.9]
+                                },
+                                
+                                "KNN": {
+                                    'n_neighbors': [3, 5, 7],
+                                    'weights': ['uniform', 'distance']
+                                },
+                                
+                                "Decision Tree": {
+                                    'max_depth': [5, 10],            
+                                    'min_samples_split': [2, 5],
+                                    'min_samples_leaf': [1, 2],
+                                    'max_features': ['sqrt', 'log2'] 
+                                }
+                            }
+
+
 
                 model_report = evaluate_models(
                     X_train=X_train,
                     y_train=y_train,
                     X_test=X_test,
                     y_test=y_test,
-                    models=models
+                    models=models,
+                    params=params
                 )
 
                 best_model_score = max(model_report.values())
