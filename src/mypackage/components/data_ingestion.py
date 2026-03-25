@@ -6,6 +6,8 @@ from dataclasses import dataclass
 import pandas as pd
 from mypackage.components.data_transformation import DataTransformation
 from mypackage.components.data_transformation import DataTransformationConfig
+from mypackage.components.model_trainer import ModelTrainer
+from mypackage.components.model_trainer import ModelTrainerConfig
 
 @dataclass
 class DataIngestionConfig: 
@@ -49,12 +51,23 @@ class DataIngestion:
 
 
 if __name__ == "__main__":
-    obj = DataIngestion()
-    obj.initiate_data_transformation(
-        "artifacts/train_data.csv",
-        "artifacts/test_data.csv"
+
+    from mypackage.components.data_transformation import DataTransformation
+    from mypackage.components.data_ingestion import DataIngestion
+
+    #  Data Ingestion
+    ingestion = DataIngestion()
+    train_path, test_path = ingestion.initiate_data_ingestion()
+
+    #  Data Transformation
+    transformation = DataTransformation()
+    train_arr, test_arr, _ = transformation.initiate_data_transformation(
+        train_path,
+        test_path
     )
-    train_data, test_data = obj.initiate_data_ingestion()             
-     
-    data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data, test_data)
+
+    #  Model Training
+    trainer = ModelTrainer()
+    r2 = trainer.initiate_model_trainer(train_arr, test_arr)
+
+    print("Final Model R2 Score:", r2)

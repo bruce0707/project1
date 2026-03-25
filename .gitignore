@@ -1,3 +1,4 @@
 venvv/
 __pycache__/
 *.pyc
+.artifacts
